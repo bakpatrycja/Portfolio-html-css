@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kotolandia</title>
+    <LINK href="src/css/main.css" rel="stylesheet" type="text/css">
+    <LINK href="src/css/hover.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/668b2f2642.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container cont" >
+    <nav class="menu">
+
+        <h1 class="logoa"><img class="responsive logob" src="img/logocat.png" alt="kotoblog"> </h1>
+        <div class="ulist">
+            <button class="toggle-nav">
+                <span aria-hidden="true">&#9776;</span>
+                <span class="visuallyhidden">Rozwiń/zwiń menu</span>
+            </button>
+            <ul class="active">
+                <li class="current-item"><a href="index.html"> Strona główna</a></li>
+                <li><a href="login.html"> Załóż konto</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+
+
+<div class="container-fluid">
+
+    <div class="imgbig">
+        <div class="text">
+            <span class="text1">Nullam lacinia nibh sit .</span><br>
+            <span class="text2">Nullam lacinia nibh sit amet ullamcorper tristique.</span>
+        </div>
+
+    </div>
+</div>
+
+<main>
+    <div class="container">
+
+        <div class="col-md-6 col-sm-12">
+            <form>
+                <fieldset>
+                    <h4 class="login">
+                        Zaloguj się</h4>
+                    <label class="addcomment">Nick</label>
+                    <input  class="addcomment inp inp2">
+                    <label class="addcomment">Hasło</label>
+                    <input  class="addcomment inp inp2">
+                    <button class="send">Zaloguj się</button>
+                </fieldset>
+            </form>
+
+            <h4 class="login">
+                Zaloguj się za pomocą</h4>
+            <div class="face">
+            <a href="#" class="facebook social"><i class="fa fa-facebook-official fcb" aria-hidden="true" style="padding-right: 5% !important;"></i> Facebook
+            </a>
+            </div>
+            <div class="goo">
+            <a href="#" class="google social"><i class="fa fa-google-plus-square go" aria-hidden="true" style="padding-right: 5% !important;"></i>
+                Google+
+            </a>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-sm-12">
+                <form>
+                    <fieldset>
+                        <h4 class="login"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                            Zarejestruj się</h4>
+                        <label class="addcomment">Nick</label>
+                        <input  class="addcomment inp inp2">
+                        <label class="addcomment">E-mail</label>
+                        <input class="addcomment inp inp2">
+                        <label class="addcomment">Hasło</label>
+                        <input  class="addcomment inp inp2">
+                        <label class="">Potwórz hasło</label>
+                        <input  class="addcomment inp inp2">
+
+                        <button class="send">Załóż konto</button>
+                    </fieldset>
+                </form>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p class="ftext">Kotoblog.pl</p>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        jQuery('.toggle-nav').click(function(e) {
+            jQuery(this).toggleClass('active');
+            jQuery('.menu ul').toggleClass('active');
+
+            e.preventDefault();
+        });
+    });
+</script>
+</body>
+</html>
